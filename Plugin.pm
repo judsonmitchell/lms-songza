@@ -79,7 +79,12 @@ sub topLevel {
         
 
         my @menu = (
-                { name  => 'Go', type => "audio", url => 'songza://songza.com/api/1/station/1721067/next?format=mp3'}
+                { name  => 'Genres', type => "link", url => 'http://songza.com/api/1/gallery/tag/genres'},
+                { name  => 'Activities', type => "link", url => 'http://songza.com/api/1/gallery/tag/activities'},
+                { name  => 'Moods', type => "link", url => 'http://songza.com/api/1/gallery/tag/moods'},
+                { name  => 'Decades', type => "link", url => 'http://songza.com/api/1/gallery/tag/decades'},
+                { name  => 'Culture', type => "link", url => 'http://songza.com/api/1/gallery/tag/culture'},
+                { name  => 'Record Store Clerk', type => "link", url => 'http://songza.com/api/1/gallery/tag/record_store_clerk'}
         );
 
         $callback->(\@menu);
